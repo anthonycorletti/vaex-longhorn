@@ -1,0 +1,26 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: vaex-rook-ceph
+  region: us-east-1
+  version: "1.20"
+
+cloudWatch:
+  clusterLogging:
+    enableTypes: ["all"]
+
+managedNodeGroups:
+  - name: vaex-rook-ceph
+    labels: { nodegroup: vaex-rook-ceph }
+    instanceType: m5.xlarge
+    minSize: 3
+    maxSize: 5
+    desiredCapacity: 3
+    volumeSize: 200
+    ssh:
+      allow: true
+      publicKeyName: vaex-rook-ceph
+    iam:
+      withAddonPolicies:
+        autoScaler: true
