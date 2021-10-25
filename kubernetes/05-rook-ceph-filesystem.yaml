@@ -2,7 +2,7 @@
 apiVersion: ceph.rook.io/v1
 kind: CephFilesystem
 metadata:
-  name: myfs
+  name: vaex-data
   namespace: rook-ceph
 spec:
   metadataPool:
