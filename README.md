@@ -86,3 +86,8 @@ ip-192-168-11-55.ec2.internal    198m         5%     1895Mi          13%
 ip-192-168-32-153.ec2.internal   117m         2%     1712Mi          11%
 ip-192-168-9-148.ec2.internal    179m         4%     2166Mi          14%
 ```
+
+Sources:
+- https://rook.io/docs/rook/v1.7/quickstart.html
+- https://rook.io/docs/rook/v1.7/ceph-filesystem.html
+- https://eksctl.io/usage/schema/
