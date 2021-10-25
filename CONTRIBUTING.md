@@ -1,5 +1,7 @@
 # Contributing
 
+Read the [docs](./docs).
+
 To build the vaex-server docker container, run the following command.
 
 ```sh
