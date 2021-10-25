@@ -1,6 +1,6 @@
 # vaex-rook-ceph
 
-Building a large-scale, kubernetes-native, dataframe layer.
+A Kubernetes-native, large scale, high performance, dataframe layer.
 
 Read the [docs](./docs) and the [contributing doc](./CONTRIBUTING.md) to get started.
 
