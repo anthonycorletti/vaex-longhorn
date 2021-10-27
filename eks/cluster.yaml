@@ -2,7 +2,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: vaex-rook-ceph
+  name: vaex-longhorn
   region: us-east-1
   version: "1.20"
 
@@ -11,8 +11,8 @@ cloudWatch:
     enableTypes: ["all"]
 
 managedNodeGroups:
-  - name: vaex-rook-ceph
-    labels: { nodegroup: vaex-rook-ceph }
+  - name: vaex-longhorn
+    labels: { nodegroup: vaex-longhorn }
     instanceType: m5.xlarge
     minSize: 3
     maxSize: 5
@@ -20,7 +20,7 @@ managedNodeGroups:
     volumeSize: 200
     ssh:
       allow: true
-      publicKeyName: vaex-rook-ceph
+      publicKeyName: vaex-longhorn
     iam:
       withAddonPolicies:
         autoScaler: true
